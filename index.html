@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catriel Pardo · Desarrollo web en Río Cuarto</title>
+
+  <!-- SEO / Metadatos -->
+  <meta name="description" content="Diseñador y desarrollador web en Río Cuarto, Córdoba. Creo sitios web profesionales para que tu comercio aparezca en Google, trabaje 24/7 y venda más. Trato cercano y soporte local.">
+  <meta name="author" content="Catriel Pardo">
+  <meta property="og:title" content="Catriel Pardo · Desarrollo web en Río Cuarto">
+  <meta property="og:description" content="Sitios web profesional para comercios de Río Cuarto: presencia, credibilidad y ventas 24/7. Trato cercano y soporte local.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (emoji simple, alternable) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23B4552F'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23FAF4E8' font-family='Georgia, serif'>CP</text></svg>">
+
+  <!-- Google Fonts: Fraunces (títulos) + Karla (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════ NAVEGACIÓN ══════════════════════════════ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <span class="brand-mark">CP</span>
+        <span class="brand-name">Catriel Pardo</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#por-que">¿Por qué una web?</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn btn-primary btn-nav" href="#contacto">Hablemos</a>
+      </nav>
+      <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════ HERO / PORTADA ═══════════════════════════ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hero-eyebrow reveal">
+          <span class="dot"></span> Diseño & desarrollo web · Río Cuarto, Córdoba
+        </p>
+        <h1 class="hero-title reveal">
+          Hago webs para que tu negocio<br>
+          <em>deje de depender del teléfono</em>
+        </h1>
+        <p class="hero-sub reveal">
+          Tu cliente te busca en Google, no en Instagram. Te dejo una web profesional, rápida y hecha a medida,
+          que vende por vos las 24 horas. Diseñada y desarrollada acá, en Río Cuarto — con trato cercano y soporte local.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-accent btn-lg" href="#contacto">Contame tu negocio</a>
+          <a class="btn btn-ghost btn-lg" href="#servicios">Ver qué incluye</a>
+        </div>
+        <ul class="hero-proof reveal">
+          <li>✓ Tiempo real de entrega</li>
+          <li>✓ Soporte permanente</li>
+          <li>✓ Vos tenés el control</li>
+        </ul>
+      </div>
+
+      <div class="hero-art reveal" aria-hidden="true">
+        <!-- Composición geométrica propia (SVG) -->
+        <svg viewBox="0 0 300 360" class="hero-illustration" role="img" aria-label="Ilustración del proceso de creación de una web">
+          <rect x="30" y="30" width="240" height="300" rx="18" fill="#D9A441" opacity="0.35"/>
+          <rect x="78" y="54" width="144" height="96" rx="10" fill="#3B2E22"/>
+          <rect x="95" y="82" width="30" height="18" rx="4" fill="#B4552F"/>
+          <rect x="140" y="82" width="30" height="18" rx="4" fill="#B4552F"/>
+          <rect x="95" y="108" width="110" height="8" rx="4" fill="#FAF4E8"/>
+          <rect x="95" y="122" width="82" height="8" rx="4" fill="#FAF4E8" opacity="0.6"/>
+          <rect x="95" y="168" width="44" height="44" rx="8" fill="#9CB94F"/>
+          <rect x="147" y="168" width="44" height="44" rx="8" fill="#B4552F"/>
+          <rect x="199" y="168" width="44" height="44" rx="8" fill="#D9A441"/>
+          <rect x="95" y="226" width="72" height="10" rx="5" fill="#9CB94F"/>
+          <rect x="95" y="246" width="110" height="10" rx="5" fill="#9CB94F" opacity="0.5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+<!-- ════════════════ ¿POR QUÉ UNA WEB PARA TU NEGOCIO? ════════════════ -->
+  <section class="section" id="por-que">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="kicker">¿Por qué una web?</p>
+        <h2 class="section-title">Tu negocio merece más que un <em>perfil de Instagram</em></h2>
+        <p class="section-sub">
+          Si hoy solo estás en redes, estás dejando ventas y clientes afuera. Una web propia cambia eso.
+        </p>
+      </header>
+
+      <div class="cards-grid">
+        <!-- Tarjeta 1 -->
+        <article class="card reveal">
+          <span class="card-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="8" fill="#9CB94F"/><rect x="12" y="14" width="24" height="3" rx="1.5" fill="#3B2E22"/><rect x="12" y="21" width="16" height="3" rx="1.5" fill="#3B2E22" opacity="0.7"/><circle cx="33" cy="22" r="5" fill="#B4552F"/></svg></span>
+          <h3>Aparecés en Google</h3>
+          <p>Cuando alguien busca "restaurante en Río Cuarto", una web propia te muestra. Instagram casi no te trae clientes nuevos que no te conocen.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Credibilidad</h3>
+          <p>Un negocio con web inspira confianza. Hoy, el que no tiene, parece cerrado o poco serio — aunque trabaje excelente.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Trabaja 24/7</h3>
+          <p>Horarios, menú, productos, ubicación y contacto siempre visibles. Atendé mientras dormís, igual que tus redes pero sin algoritmo en el medio.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Vos decidís tu imagen</h3>
+          <p>Tu web es tuya: diseño, datos, mensaje. No dependés de cambios de diseño ni de caprichos del algoritmo de una red social.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Comunicación directa</h3>
+          <p>Botón de WhatsApp integrado para que el cliente te escriba de un toque. Sin intermediarios, sin comisiones de app de delivery.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ SERVICIOS ══════════════════════════════ -->
+  <section class="section section-alt" id="servicios">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="kicker">Qué desarrollo</p>
+        <h2 class="section-title">Un sitio para cada tipo de negocio</h2>
+        <p class="section-sub">Elegí el que mejor se adapte. Todos incluyen diseño, dominio, hosting, mantenimiento y soporte.</p>
+      </header>
+
+      <div class="pricing-grid">
+        <!-- Landing -->
+        <article class="plan reveal">
+          <p class="plan-tag">Arranque smart</p>
+          <h3>Landing / Sitio Vitrina</h3>
+          <p class="plan-sub">Una sola página que presenta tu negocio, servicios y contacto.</p>
+          <ul class="plan-list">
+            <li>Diseño a medida con tu identidad</li>
+            <li>Presentación, horarios y ubicación</li>
+            <li>Botones de WhatsApp y teléfono</li>
+            <li>Dominio + hosting incluidos</li>
+            <li>Versión móvil perfecta</li>
+          </ul>
+          <p class="plan-cta">Ideal para arrancar y tener presencia profesional.</p>
+        </article>
+
+        <!-- Catálogo -->
+        <article class="plan plan-featured reveal">
+          <span class="plan-badge">Más elegido</span>
+          <p class="plan-tag">Mostrá todo</p>
+          <h3>Sitio Catálogo</h3>
+          <p class="plan-sub">Multi-sección: tu historia, productos, servicios, galería y contacto.</p>
+          <ul class="plan-list">
+            <li>Todo lo de la Landing</li>
+            <li>Menú / catálogo de productos o servicios</li>
+            <li>Galería de fotos de tu trabajo</li>
+            <li>Buen SEO para aparecer en Google</li>
+            <li>Actualizaciones trimestrales incluidas</li>
+          </ul>
+          <p class="plan-cta">Ideal para: restaurantes, locales de ropa, peluquerías, profesionales.</p>
+        </article>
+
+        <!-- Reservas / a medida -->
+        <article class="plan reveal">
+          <p class="plan-tag">A medida</p>
+          <h3>Con reservas / a medida</h3>
+          <p class="plan-sub">Sistemas un poco más avanzados: turnos, pedidos o panel para gestionar tu contenido.</p>
+          <ul class="plan-list">
+            <li>Sistema de reservas de turnos</li>
+            <li>Recibí pedidos o consultas online</li>
+            <li>Panel simple para editar tu info</li>
+            <li>Integración con tus redes y WhatsApp</li>
+            <li>Soporte y mantenimiento continuo</li>
+          </ul>
+          <p class="plan-cta">Ideal para: gimnasios, salones de eventos, profesionales de la salud, emprendimientos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<!-- ══════════════════════════════ PROCESO ══════════════════════════════ -->
+  <section class="section" id="proceso">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="kicker">Cómo trabajamos</p>
+        <h2 class="section-title">Simple, claro y <em>sin vueltas</em></h2>
+        <p class="section-sub">No necesitás saber nada de tecnología. Yo me encargo de todo, vos solo definís qué querés mostrar.</p>
+      </header>
+
+      <ol class="steps-list">
+        <li class="step reveal"><span class="step-num">1</span><div><h3>Charla inicial</h3><p>Nos juntamos (presencial en Río Cuarto o por WhatsApp) y me contás sobre tu negocio: qué hacés, qué querés lograr.</p></div></li>
+        <li class="step reveal"><span class="step-num">2</span><div><h3>Propuesta clara</h3><p>Te armo una propuesta con precio final, sin sorpresas. Qué incluye, cuánto tarda, qué necesitás aportar.</p></div></li>
+        <li class="step reveal"><span class="step-num">3</span><div><h3>Diseño</h3><p>Diseño una web a medida con tu identidad y colores. Te muestro cómo va a quedar y ajustamos lo que quieras.</p></div></li>
+        <li class="step reveal"><span class="step-num">4</span><div><h3>Desarrollo</h3><p>La construyo pensando en que cargue rápido y funcione perfecto en el celular de tus clientes.</p></div></li>
+        <li class="step reveal"><span class="step-num">5</span><div><h3>Entrega</h3><p>La subimos a internet, con tu dominio y correo si lo necesitás. Te enseño a manejarla en 10 minutos.</p></div></li>
+        <li class="step reveal"><span class="step-num">6</span><div><h3>Soporte</h3><p>Quedo con vos para cambios, consultas y mantenimiento. Acá a la vuelta, no en otro país.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+<!-- ═════════════════════ Sobre mí + Portfolio (proyectos) ═════════════════ -->
+  <section class="section section-alt" id="sobre-mi">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="kicker">Quién está atrás</p>
+        <h2 class="section-title">Sobre mí & mis <em>proyectos</em></h2>
+      </header>
+
+      <!-- Perfil -->
+      <div class="about-grid reveal">
+        <div class="about-photo">
+          <!-- CAMBIA LA FOTO: reemplaza assets/mi-foto.png por tu foto actual -->
+          <img src="assets/mi-foto.png" alt="Foto de Catriel Pardo">
+        </div>
+        <div class="about-text">
+          <h3>Catriel Pardo</h3>
+          <p class="about-role">Técnico Superior en Desarrollo Web &amp; Aplicaciones Digitales · Río Cuarto, Córdoba</p>
+          <p>
+            Hago sitios web y aplicaciones digitales pensadas para que las personas y los negocios
+            resuelvan problemas reales. Soy de Río Cuarto, curso la Tecnicatura Superior en Desarrollo
+            Web y Aplicaciones Digitales (ISPC) y me formé en desarrollo Full Stack, programación y
+            diseño, con foco en que cada web no solo se vea bien, sino que funcione y venda.
+          </p>
+          <p>
+            Del otro lado de tu web hay una persona de Río Cuarto: te entiendo, te contesto rápido y
+            te explico todo sin tecnicismos.
+          </p>
+          <ul class="about-stats">
+            <li><strong>1+</strong> años de experiencia web</li>
+            <li><strong>6</strong> proyectos desarrollados</li>
+            <li><strong>Full Stack</strong> desarrollo integral</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stack técnico -->
+      <section class="stack reveal">
+        <h3>Mi caja de herramientas</h3>
+        <ul class="stack-list">
+          <li>HTML / CSS / JavaScript</li>
+          <li>React</li>
+          <li>Vite</li>
+          <li>Python</li>
+          <li>Full Stack</li>
+          <li>Dispositivos móviles</li>
+          <li>Firebase / Supabase</li>
+          <li>Git & GitHub</li>
+          <li>Diseño UI / UX</li>
+        </ul>
+      </section>
+
+      <!-- Formación & Certificados -->
+      <section class="edu reveal">
+        <h3>Formación y certificaciones</h3>
+        <div class="edu-list">
+          <div class="edu-item">
+            <span class="edu-dot"></span>
+            <p><strong>Técnico Superior en Desarrollo Web y Aplicaciones Digitales</strong>
+            <br>Instituto Superior Politécnico Córdoba (ISPC) · Egresado 2024 · Validez Nacional</p>
+          </div>
+          <div class="edu-item">
+            <span class="edu-dot"></span>
+            <p><strong>Desarrollador Full Stack Junior</strong> — 300 h · 2023
+            <br>Formación Profesional · Ministerio de Educación de Córdoba</p>
+          </div>
+          <div class="edu-item">
+            <span class="edu-dot"></span>
+            <p><strong>Programador Web</strong> — 205 h · 2024 &nbsp;·&nbsp; <strong>Programador de Dispositivos Móviles</strong> — 185 h · 2024
+            <br>Formación Profesional · Ministerio de Educación de Córdoba</p>
+          </div>
+          <div class="edu-item">
+            <span class="edu-dot"></span>
+            <p><strong>Programing Essentials in Python</strong> — 75 h · 2023
+            <br>Instituto Superior Politécnico Córdoba</p>
+          </div>
+          <div class="edu-item">
+            <span class="edu-dot"></span>
+            <p><strong>Oracle Next Education (Alura / ONE)</strong> — Programación, HTML &amp; CSS, Desarrollo Personal, Business Agility
+            <br>Oracle Argentina · 2022-2023 · 200+ horas</p>
+          </div>
+          <div class="edu-item">
+            <span class="edu-dot"></span>
+            <p><strong>Inglés Nivel C1 Advanced</strong> (EF SET · 68/100) · 2023
+            <br>Comprensión lectora y auditiva de alto nivel</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos (casos) -->
+      <h3 class="projects-title reveal">Proyectos destacados</h3>
+      <div class="projects-grid">
+
+        <article class="project reveal">
+          <span class="project-tag">Sistemas web</span>
+          <h4>SisGest — Gestión escolar</h4>
+          <p>Sistema administrativo para una escuela: legajos, materias previas, grillas horarias y auditoría, con base de datos configurable (Firebase o Supabase).</p>
+          <ul class="project-stack"><li>React</li><li>Vite</li><li>Supabase</li></ul>
+          <a class="project-link" href="https://github.com/cartup90/SistemaAdministrativoCEIJA" target="_blank" rel="noopener">Ver repositorio ↗</a>
+        </article>
+
+        <article class="project reveal">
+          <span class="project-tag">Web app</span>
+          <h4>BunkerFinance</h4>
+          <p>Aplicación para dividir y arreglar cuentas de juntadas entre amigos. Olvidate de los "después te paso" sin resolver.</p>
+          <ul class="project-stack"><li>React</li><li>Vite</li></ul>
+          <a class="project-link" href="https://github.com/cartup90/BunkerFinance" target="_blank" rel="noopener">Ver repositorio ↗</a>
+        </article>
+
+        <article class="project reveal">
+          <span class="project-tag">Web app</span>
+          <h4>CheckurStats</h4>
+          <p>App de estadísticas de pádel para llevar el detalle de tus partidos, resultados y evolución en la cancha.</p>
+          <ul class="project-stack"><li>JavaScript</li><li>Vite</li></ul>
+          <a class="project-link" href="https://github.com/cartup90/CheckurStats" target="_blank" rel="noopener">Ver repositorio ↗</a>
+        </article>
+
+        <article class="project reveal">
+          <span class="project-tag">Prototipos sociales</span>
+          <h4>PROA Model Training</h4>
+          <p>Serie de prototipos con impacto social: reconocimiento de lengua de señas, detección de billetes falsos y alertas de phishing.</p>
+          <ul class="project-stack"><li>JavaScript</li><li>HTML/CSS</li></ul>
+          <a class="project-link" href="https://github.com/cartup90/PROA-Modeltraining" target="_blank" rel="noopener">Ver repositorio ↗</a>
+        </article>
+
+        <article class="project reveal">
+          <span class="project-tag">Api + Frontend</span>
+          <h4>Prana</h4>
+          <p>Plataforma full-stack con frontend en TypeScript y una API REST en Python. Proyecto integral de punta a punta.</p>
+          <ul class="project-stack"><li>TypeScript</li><li>Python</li></ul>
+          <a class="project-link" href="https://github.com/NahuelPardo89/PranaV1.0" target="_blank" rel="noopener">Ver repositorio ↗</a>
+        </article>
+
+        <article class="project reveal">
+          <span class="project-tag">Portfolio</span>
+          <h4>Mi primer portfolio</h4>
+          <p>Mi portfolio anterior, armado con HTML y CSS puro. El punto de partida de este camino.</p>
+          <ul class="project-stack"><li>HTML</li><li>CSS</li></ul>
+          <a class="project-link" href="https://github.com/cartup90/portfolio" target="_blank" rel="noopener">Ver repositorio ↗</a>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+<!-- ══════════════════════════ TESTIMONIOS (placeholder editable) ═══════════ -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="kicker">Casos de éxito</p>
+        <h2 class="section-title">Lo que dicen mis <em>clientes</em></h2>
+        <p class="section-sub">✏️ Acá vas a poner los testimonios reales de tus clientes cuando los tengas. Agregá o sacá tarjetas libremente.</p>
+      </header>
+
+      <div class="cards-grid testimonials-grid">
+        <blockquote class="testimonial reveal">
+          <p>"[Texto del testimonio de tu cliente: qué le cambió tener la web, cómo mejoraron las consultas o las ventas.]"</p>
+          <footer>— <strong>[Nombre]</strong>, [Nombre del negocio] · Río Cuarto</footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>"[Otro testimonio. Podés borrar este bloque o repetirlo para más]."</p>
+          <footer>— <strong>[Nombre]</strong>, [Nombre del negocio]</footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>"[Y otro más. Tres testimonios queda bien balanceado.]"</p>
+          <footer>— <strong>[Nombre]</strong>, [Nombre del negocio]</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ CONTACTO ══════════════════════════════ -->
+  <section class="section section-alt contact" id="contacto">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="kicker">Hablemos</p>
+        <h2 class="section-title">Contáme de tu negocio, <em>sin compromiso</em></h2>
+        <p class="section-sub">Escribime por WhatsApp o dejame tus datos y te contesto a la brevedad. Primera consulta gratuita.</p>
+      </header>
+
+      <div class="contact-grid">
+        <!-- Formulario -->
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+          </label>
+          <label>
+            ¿Qué negocio tenés?
+            <input type="text" name="negocio" placeholder="Ej.: Peluquería en el centro">
+          </label>
+          <label>
+            Tu teléfono / WhatsApp
+            <input type="tel" name="telefono" placeholder="Ej.: 358 455 1234" required>
+          </label>
+          <label>
+            ¿Qué necesitás?
+            <textarea name="mensaje" rows="4" placeholder="Contame qué te gustaría: una web, una tienda, reservas..."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Enviar consulta</button>
+          <p class="form-note" id="formNote" hidden></p>
+        </form>
+
+        <!-- Vías de contacto -->
+        <aside class="contact-side reveal">
+          <!-- WhatsApp de contacto configurado: 5493584180337. Para cambiarlo, edita js/app.js y este enlace -->
+          <a class="contact-whatsapp" href="https://wa.me/5493584180337?text=Hola%2C%20quiero%20una%20web%20para%20mi%20negocio" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.3c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-2-.7-3.8-2.3-5-4.5-.5-.8-.9-1.7-.9-2.4 0-.7.4-1 .7-1.4.2-.2.3-.4.4-.7.1-.3 0-.5 0-.7l-.8-1.8c-.2-.5-.4-.6-.7-.6h-.5c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.1.2 2.3 3.5 5.6 4.9 2.5 1.1 3.4 1.2 4.3 1 .6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4l-1.9-1c-.3-.1-.5-.1-.7.1l-.7.8c-.2-.2-.3-.3-.6-.2s-1-.4-1.9-1.1c-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.5-.6.3-.5c.1-.2.1-.4 0-.5l-1-2.1c-.2-.5-.4-.4-.7-.4h-.6Z"/></svg>
+            <span>
+              <strong>Escribime por WhatsApp</strong>
+              <small>Respuesta rápida, trato directo</small>
+            </span>
+          </a>
+          <div class="contact-links">
+            <!-- CAMBIA estos enlaces por tus redes reales -->
+            <a href="https://www.linkedin.com/in/catriel-pardo/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com/cartup90" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+          </div>
+          <p class="contact-email">📧 pardocatriel@gmail.com</p>
+          <p class="contact-loc">📍 Río Cuarto, Córdoba, Argentina</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+<!-- ══════════════════════════════ FOOTER ══════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Catriel Pardo</p>
+        <p>Diseño y desarrollo web en Río Cuarto, Córdoba.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#por-que">¿Por qué una web?</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer-copy">© 2026 Catriel Pardo — Hecho a mano, en Río Cuarto.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp (visible en todas las secciones) -->
+  <a class="wa-float" id="waFloat"
+     href="https://wa.me/5493584180337?text=Hola%2C%20quiero%20una%20web%20para%20mi%20negocio"
+     target="_blank" rel="noopener" aria-label="Escribime por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.3c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-2-.7-3.8-2.3-5-4.5-.5-.8-.9-1.7-.9-2.4 0-.7.4-1 .7-1.4.2-.2.3-.4.4-.7.1-.3 0-.5 0-.7l-.8-1.8c-.2-.5-.4-.6-.7-.6h-.5c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.1.2 2.3 3.5 5.6 4.9 2.5 1.1 3.4 1.2 4.3 1 .6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4l-1.9-1c-.3-.1-.5-.1-.7.1l-.7.8c-.2-.2-.3-.3-.6-.2s-1-.4-1.9-1.1c-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.5-.6.3-.5c.1-.2.1-.4 0-.5l-1-2.1c-.2-.5-.4-.4-.7-.4h-.6Z"/></svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
